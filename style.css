@@ -1,4 +1,24 @@
 /* ===========================
+        common css
+============================*/
+body{
+    background-color: #E5E5E5;;
+}
+
+section{
+    
+    margin-top: 20px;
+}
+.container{
+    width: 1000px;
+    margin: 0 auto;
+    background-color: #ffffff;
+    
+   
+    
+}
+
+/* ===========================
         header area
 ============================*/
 .header_area{
@@ -33,10 +53,7 @@
     height: 51px;
     margin-left: 20px;
 }
-ul{
-    
 
-}
 Ul li{
     display: inline-block;
     margin-right: 36px;
@@ -46,3 +63,167 @@ ul li a{
     color: white;
     font-size: 16px;
 }
+
+/* ===========================
+        players area
+============================*/
+
+.top_player{
+    justify-content: center;
+    padding-left: 30px;
+    padding-bottom: 30px;
+}
+.top_player h1{
+   
+    padding-top: 30px;
+}
+.players{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    row-gap: 20px;
+    
+    
+}
+.player{
+    display: flex;
+}
+.player img{
+    width: 56px;
+    height: 56px;
+    margin-right: 16px;
+
+}
+hr{
+    width: 940px;
+    height: 0px;
+    border: 1px solid #D1D1D1;
+}
+
+/* ===========================
+        blog area
+============================*/
+.top_blogs{
+    padding-left: 30px;
+    padding-bottom: 30px;
+}
+.blogs{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    row-gap: 30px;   
+}
+.blog{
+    display: flex;
+}
+
+.blog_thumbnail img{
+    width: 224px;
+    height: 127px;
+    margin-right: 20px;
+}
+.bloger_name{
+    color: #562EFF;
+}
+
+/* ===========================
+        course area
+============================*/
+.courses{
+    display: flex; 
+}
+.course{
+    margin-right: 50px;
+}
+.top_course{
+  padding: 30px;
+}
+.course_banner img{
+    width: 250px;
+    height: 120px;
+
+}
+.course_author{
+    color: #ED6B4F;
+}
+.course_info{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.star_filled{
+    color: #FFC014;
+}
+.half_filled{
+    color: #FFC014;
+}
+.clock{
+    display: flex;
+    height: 20px;
+    width: 80px;
+    padding: 5px;
+    align-items: center;
+    color: #ED6B4F;
+    background-color: bisque;
+    border-radius: 15px;
+
+}
+.fa-clock{
+    margin-right: 5px;
+}
+footer{
+    background-color: black;
+    height: 100px;
+    width: 1000px;
+    color:white;
+    font-weight: bold;
+    text-align: center;
+    padding-top: 100px;
+    margin-top: 20px;
+    margin-left: 165px;
+
+}
+
+/* ===========================
+        Media query
+============================*/
+/* mobile device */
+@media only screen and (max-width:688px){
+    .container{
+        width: 100%;
+    }
+    .header_area{
+        display: none;
+    }
+    .players{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        justify-content: center;
+    }
+    .blogs{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        row-gap: 30px;   
+    }
+
+    .blog_thumbnail img{
+        width: 100%;
+   
+    }
+    .courses{
+        display: flex; 
+        flex-direction: column;
+    }
+    footer{
+        width: 100%;
+        margin-left: 0;
+    }
+
+}
+
+
+
+
+
+
+
+
+
